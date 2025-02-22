@@ -1,6 +1,7 @@
 #ifndef PIECE_H
 #define PIECE_H
 
+#include <algorithm>
 #include <string>
 #include <utility>
 #include <vector>
@@ -97,8 +98,11 @@ public:
      * @return true if the piece can updatePosition in the given direction
      */
     bool canMoveDirection(const Vector2D &vector) const {
-        return std::find(vectorMoves_.begin(), vectorMoves_.end(), vector) != vectorMoves_.end();
+        return std::any_of(vectorMoves_.begin(), vectorMoves_.end(),
+                           [&vector](const Vector2D& v) { return v == vector; });
     }
+
+
 
 
     /**

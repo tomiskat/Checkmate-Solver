@@ -3,6 +3,7 @@
 
 #include <fstream>
 #include <sstream>
+#include <climits>
 #include "pieces/Piece.h"
 #include "pieces/King.h"
 #include "pieces/Queen.h"

@@ -147,6 +147,16 @@ struct Position {
 
 
     /**
+     * @brief Inequality operator for comparing two Positions.
+     * @param position Position to compare with.
+     * @return True if the two Positions are not equal.
+     */
+    bool operator!=(const Position & position) const {
+        return !(*this == position);
+    }
+
+
+    /**
      * @brief Adds a Vector2D to the current position.
      * @param vector The Vector2D to be added.
      * @return The resulting Position after addition.
