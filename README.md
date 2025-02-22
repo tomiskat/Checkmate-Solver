@@ -21,5 +21,10 @@ Program also tries to be flexible, it supports more ways to load game:
 - defined [positions](inputs/positions)
 
 ## Run program
-- Just clone repository and run ```make```
+```bash
+mkdir -p build
+cmake -S . -B build
+make -C build
+./build/checkmate_solver
+```
 - For more info ckeck [Usage](./USAGE.md)
