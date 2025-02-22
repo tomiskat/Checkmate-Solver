@@ -20,5 +20,6 @@ Program also tries to be flexible, it supports more ways to load game:
 - FEN - [Forsyth–Edwards Notation](https://en.wikipedia.org/wiki/Forsyth%E2%80%93Edwards_Notation)
 - defined [positions](inputs/positions)
 
-## Links
-- [Usage](./USAGE.md)
+## Run program
+- Just clone repository and run ```make```
+- For more info ckeck [Usage](./USAGE.md)
