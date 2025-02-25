@@ -27,4 +27,4 @@ cmake -S . -B build
 make -C build
 ./build/checkmate_solver
 ```
-- For more info ckeck [Usage](./USAGE.md)
+- For more info check [Usage](./USAGE.md)
